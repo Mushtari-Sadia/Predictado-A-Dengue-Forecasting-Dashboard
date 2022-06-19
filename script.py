@@ -17,7 +17,7 @@ allowSelfSignedHttps(True) # this line is needed if you use self-signed certific
 # More information can be found here:
 # https://docs.microsoft.com/azure/machine-learning/how-to-deploy-advanced-entry-script
 
-input_df = pd.read_csv('D:\OneDrive\OneDrive - BUET\OneDrive\MVH\\test.csv')
+input_df = pd.read_csv('D:\OneDrive\OneDrive - BUET\OneDrive\MVH\DengueDashboard\\train_test_datasets\\test.csv')
 
 # print(input_df.index)
 input_df = input_df
@@ -73,4 +73,4 @@ for i,row in input_df.iterrows():
       print(error.read().decode("utf8", 'ignore'))
 
 input_df['Value'] = forecasts
-print(input_df)
+print(input_df_2)
