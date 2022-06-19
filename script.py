@@ -61,7 +61,7 @@ for i,row in input_df.iterrows():
       # print(result.decode())
       # print(type(json.loads(result.decode('utf-8'))))
       # df = pd.DataFrame.from_dict(json.loads(result.decode('utf-8')))
-      forecasts.append(json.loads(result.decode('utf-8'))['Results']['forecast'])
+      forecasts.append(json.loads(result.decode('utf-8'))['Results']['forecast'][0])
       # dfs.append(df)
       # print(forecasts[-1])
 
