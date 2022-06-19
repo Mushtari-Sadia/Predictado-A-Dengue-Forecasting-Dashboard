@@ -74,7 +74,7 @@ We used Azure Machine Learning Studio to build our prediction system.
 ### `Training ML models on our dataset with Azure ML`
 
 
-We used the AutoML service of Azure ML studio to train several models on our training dataset. We created an AutoML job and chose time series forecasting models for our prediction. It took about 1.5 hours to complete the ML job. Afterwards, we could see various time series forecasting models trained and sorted on their Normalized Root Mean Square score. We chose the best model which was Exponential Smoothing.
+We used the AutoML service of Azure ML studio to train several models on our training dataset. We created an AutoML job and chose time series forecasting models for our prediction. It took about 1.5 hours to complete the ML job. Afterwards, we could see various time series forecasting models trained and sorted on their **Normalized Root Mean Square Error (RMSE)**. We chose the best model which was **Exponential Smoothing** with **RMSE of only 3%**.
 
 
 ![](images/automl1.JPG)
