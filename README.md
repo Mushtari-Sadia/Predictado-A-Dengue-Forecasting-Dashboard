@@ -83,15 +83,21 @@ We used the AutoML service of Azure ML studio to train several models on our tra
 
 ## `Deploying Model as Web Service`
 
-We deployed our model as a web service and later used it as an endpoint to generate prediction on test dataset. Later, we used that test data in Power BI to create our dashboard.
+- We deployed our model as a web service and later used it as an endpoint to generate prediction on test dataset. Later, we used that test data in Power BI to create our dashboard.
 
 ![](images/automl_deploy.JPG)
 ![](images/endpoint1.JPG)
 
-In the following picture, we can see the model can generate a prediction data point based on given input.
+
+- In the following picture, we can see the model can generate a prediction data point based on given input.
+
+
 ![](images/endpoint3.JPG)
 
-We copied the given code in this picture and used it in our 'script.py' to generate predictions on our test dataset.
+
+- We copied the given code in this picture and used it in our 'script.py' to generate predictions on our test dataset.
+
+
 ![](images/endpoint4.JPG)
 
 
