@@ -111,5 +111,8 @@ Finally, we deployed our dashboard in the web using heroku : https://mvh-rmst.he
 
 
 
+### Future Work
+
+Due to some limitations in the data collection process, this prototype was built using a small amount of data and a subset of the proposed features. We plan on building a more accurate model by collecting larger amount of data and using some more relevant features such as **Aedes vector** and **human population** in the future.
 
 
