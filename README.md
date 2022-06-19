@@ -90,6 +90,7 @@ We copied the given code in this picture and used it in our 'script.py' to gener
 ### Using API Endpoint of Model to Predict Dengue Cases for Test Dataset
 
 ![](images/powerbi1.JPG)
+![](images/add_data_script.JPG)
 
 ### `Dashboard`
 
