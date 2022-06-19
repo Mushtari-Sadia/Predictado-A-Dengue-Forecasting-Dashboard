@@ -1,8 +1,11 @@
-# Dengue No More
+# Predictado: A Dengue Forecasting Dashboard
 ##  `Intro`
 
 
 ##  `Dataset`
+
+For implementing this project, the required datasets include periodical dengue cases and periodical weather data for different regions of a country.
+Since dengue is prevalent in tropical regions, datasets from South-East Asian or African countries are preferable for the experimentation. 
 
 ### `Dataset Sources`
 
