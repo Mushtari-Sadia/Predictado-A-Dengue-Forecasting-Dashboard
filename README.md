@@ -41,16 +41,16 @@ The whole processing of the dataset was done in Jupyter Notebook using pandas li
 We set up our Azure account and created a workspace in Azure Machine Learning Studio.
 
 
-![](\images\workspace.JPG)
+![](DengueDashboard\images\workspace.JPG)
 
 
 
 ## `Storing The Dataset in Azure Blob Storage`
 We uploaded the dataset in Azure Blob Storage and later used the URL of the dataset to access it from anywhere.
 
-![](\images\datablob1.JPG)
-![](\images\datablob2.JPG)
-![](\images\datablob3.JPG)
+![](DengueDashboard\images\datablob1.JPG)
+![](DengueDashboard\images\datablob2.JPG)
+![](DengueDashboard\images\datablob3.JPG)
 
 
 ## `Azure ML Studio`
@@ -63,30 +63,30 @@ We used Azure Machine Learning Studio to build our prediction system.
 We used the AutoML service of Azure ML studio to train several models on our training dataset. We created an AutoML job and chose time series forecasting models for our prediction. It took about 1.5 hours to complete the ML job. Afterwards, we could see various time series forecasting models trained and sorted on their Normalized Root Mean Square score. We chose the best model which was Exponential Smoothing.
 
 
-![](\images\automl1.JPG)
-![](\images\automl2.JPG)
-![](\images\automl3.JPG)
+![](DengueDashboard\images\automl1.JPG)
+![](DengueDashboard\images\automl2.JPG)
+![](DengueDashboard\images\automl3.JPG)
 
 
 ## `Deploying Model as Web Service`
 
 We deployed our model as a web service and later used it as an endpoint to generate prediction on test dataset. Later, we used that test data in Power BI to create our dashboard.
 
-![](\images\automl_deploy.JPG)
-![](\images\endpoint1.JPG)
-![](\images\endpoint2.JPG)
+![](DengueDashboard\images\automl_deploy.JPG)
+![](DengueDashboard\images\endpoint1.JPG)
+![](DengueDashboard\images\endpoint2.JPG)
 
 In the following picture, we can see the model can generate a prediction data point based on given input.
-![](\images\endpoint3.JPG)
+![](DengueDashboard\images\endpoint3.JPG)
 
 We copied the given code in this picture and used it in our 'script.py' to generate predictions on our test dataset.
-![](\images\endpoint4.JPG)
+![](DengueDashboard\images\endpoint4.JPG)
 
 
 ## `Power BI`
 ### Using API Endpoint of Model to Predict Dengue Cases for Test Dataset
 
-![](\images\powerbi1.JPG)
+![](DengueDashboard\images\powerbi1.JPG)
 
 ### `Dashboard`
 
