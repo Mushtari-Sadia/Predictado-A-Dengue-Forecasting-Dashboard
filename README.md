@@ -12,6 +12,9 @@
 - Temperature, Precipitation Data of Sri Lanka : https://climateknowledgeportal.worldbank.org/download-data
 
 ### `Processing The Dataset`
+
+Our target was to use daily data of weather, dengue cases but since such data are publicly less available so we had to process existing dataset on web for training purpose.
+
 Only monthly data of dengue cases was available. We had to upsample the dengue data to convert monthly data to daily data. The data of 26 cities of Sri Lanka were available.
 
 The temperature and precipitation data were also monthly. We also upsampled those data and converted them to daily data. 
