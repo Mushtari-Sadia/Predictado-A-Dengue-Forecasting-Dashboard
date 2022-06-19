@@ -107,6 +107,7 @@ We copied the given code in this picture and used it in our 'script.py' to gener
 
 Finally, we deployed our dashboard in the web using heroku : https://mvh-rmst.herokuapp.com/
 
+![](images/dashboard.png)
 
 
 
