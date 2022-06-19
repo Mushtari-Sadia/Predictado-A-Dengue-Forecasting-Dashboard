@@ -1,19 +1,19 @@
 # Predictado: A Dengue Forecasting Dashboard
 ##  `Introduction`
-Dengue - an Aedes mosquito borne disease - is one of the most common tropical diseases of the world. Dengue being an easily spreading disease, areas with clusters of dengue patients can develop very easily and become the hotspot for further spreading. From years of research, it has been established that dengue epidemic in any locality has a high correlation with different attributes of weather in that locality. 
+**Dengue** - an Aedes mosquito borne disease - is one of the most common tropical diseases of the world. It is interesting that inspite of tackling Dengue for hundreds of years, most of the measures to control this disease are reactive and very inefficient. Fortunately, there are many indicators of a Dengue outbreak that can be used for building an effective prediction system. For example, Dengue being a high spreading disease, recent dengue cases are good indicators of possible future cases. Moreover, from years of research, it is now evident that dengue epidemic in any locality has a high correlation with different attributes of weather in that locality. 
 
-Based on these assumptions, we have built an AI based dengue forecast system that predicts the number of dengue cases in any given region based on the recent cases in that region and the state of different weather parameters. Apart from these, some other features, such as: Aedes vector population, human population, infrastructure of an area are also good indicators of an upcoming Dengue epidemic. We intend to incorporate these features into our model in the future. 
+Based on these observations, in this project we have built an AI based dengue forecast system that predicts the number of dengue cases in any given region based on the **recent cases** in that region and the **state of different weather parameters**. Apart from these, some other features, such as: A**edes vector population**, **human population**, **infrastructure of an area** are also good indicators of an upcoming Dengue epidemic. We intend to incorporate these features into our model in the future. 
 
-Our system is built on top of a time series forecasting model. We developed the system using different Azure Services. The following services were used heavily in this project:
-- Azure Blob Storage
-- Azure ML Studio
-- Power BI
+Our application is built on top of a **time series forecasting model**. The front end of the system is an **interactive dashboard** thet presents useful insights about the forecasted dengue cases in the upcoming weeks/months. We developed our application using different Azure Services. The following services were used heavily:
+- `Azure Blob Storage`
+- `Azure ML Studio`
+- `Power BI`
 
 
 ##  `Dataset`
 
 For implementing this project, the required datasets include periodic dengue cases and periodic weather attribute data for different regions of a country.
-Since dengue is prevalent in tropical regions, datasets from South-East Asian, Latin American or African countries are preferable for the experiment. 
+Since dengue is prevalent in tropical regions, datasets from South-East Asian, Latin American or African countries were preferred for the experiment. 
 
 ### `Dataset Sources`
 
@@ -57,9 +57,7 @@ The whole processing of the dataset was done in Jupyter Notebook using pandas li
 
 We set up our Azure account and created a workspace in Azure Machine Learning Studio.
 
-
 ![](images/workspace.JPG)
-
 
 
 ## `Storing The Dataset in Azure Blob Storage`
@@ -67,7 +65,6 @@ We uploaded the dataset in Azure Blob Storage and later used the URL of the data
 
 ![](images/datablob1.JPG)
 ![](images/datablob2.JPG)
-![](images/datablob3.JPG)
 
 
 ## `Azure ML Studio`
@@ -81,7 +78,6 @@ We used the AutoML service of Azure ML studio to train several models on our tra
 
 
 ![](images/automl1.JPG)
-![](images/automl2.JPG)
 ![](images/automl3.JPG)
 
 
@@ -91,7 +87,6 @@ We deployed our model as a web service and later used it as an endpoint to gener
 
 ![](images/automl_deploy.JPG)
 ![](images/endpoint1.JPG)
-![](images/endpoint2.JPG)
 
 In the following picture, we can see the model can generate a prediction data point based on given input.
 ![](images/endpoint3.JPG)
